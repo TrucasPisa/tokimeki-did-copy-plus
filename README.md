@@ -27,6 +27,18 @@ A specialized UserScript for the Bluesky client "Tokimeki" that allows you to in
 
 ---
 
+### ✨ インストール方法 / Installation Guide
+
+* **UserScriptマネージャーをインストール (Install the UserScript manager):**
+   * **Tampermonkey**: [https://www.tampermonkey.net/](https://www.tampermonkey.net/)
+   * **ScriptCat**: [https://scriptcat.org/](https://scriptcat.org/)
+
+* **スクリプトをインストール (Install the script):**
+   * [Greasy Fork](https://greasyfork.org/ja/scripts/557385) にアクセスし、「インストール」ボタンを押してください。  
+     Access and click the "Install" button.
+
+---
+
 ## 💡 Tips: 快適なエコシステムの構築 / Build Your Ecosystem
 
 このスクリプトは、単体でも強力ですが、以下のスクリプトと組み合わせることで、Blueskyのブラウジング体験をさらにシームレスなものにします。  
