@@ -1,4 +1,4 @@
-# 🌈 Tokimeki DID Copy Plus v1.2
+# 🌈 Tokimeki DID Copy Plus v1.4
 
 Blueskyクライアント "Tokimeki" において、ハンドルの変更に左右されない **「不変のリンク（DIDベースのURL）」** を瞬時に取得し、さらにアクセシビリティを追求した高度なUserScriptです。  
 A specialized UserScript for the Bluesky client "Tokimeki" that allows you to instantly copy **"Invariable Links (DID-based URLs)"** that remain valid even if handles change, with a focus on advanced accessibility and UX.
@@ -18,21 +18,12 @@ A specialized UserScript for the Bluesky client "Tokimeki" that allows you to in
 3. 🌍 **完全な多言語対応 (v1.1～) / Full Multi-language Support**:
    * ブラウザの言語設定を動的に検知し、ボタン表示やトースト通知を日本語/英語で適切に切り替えます。  
      Dynamically detects browser language settings and switches UI elements (buttons and toast notifications) between Japanese and English.
-4. 🚀 **Top Layer対応のトースト通知 (🆕 v1.2～) / Top Layer Aware Notifications**:
-   * モーダル（`<dialog>`）表示中であっても、Tokimekiの階層構造を自動判別して通知を最前面に表示。画像の閲覧を妨げず、確実にコピー完了を伝えます。  
-     Automatically detects the hierarchy (even within `<dialog>`) to display toast notifications on the Top Layer, ensuring visibility even during full-screen media viewing.
-
----
-
-### ✨ インストール方法 / Installation Guide
-
-* **UserScriptマネージャーをインストール (Install the UserScript manager):**
-   * **Tampermonkey**: [https://www.tampermonkey.net/](https://www.tampermonkey.net/)
-   * **ScriptCat**: [https://scriptcat.org/](https://scriptcat.org/)
-
-* **スクリプトをインストール (Install the script):**
-   * [Greasy Fork](https://greasyfork.org/ja/scripts/557385) にアクセスし、「インストール」ボタンを押してください。  
-     Access and click the "Install" button.
+4. 🚀 **真の最前面（Top Layer）通知 (🆕 v1.3～) ＆ 標準トーストのハック (🆕 v1.4～) / True Top-Layer Notifications & Standard Toast Hack**:
+   * 最新の Popover API を採用。  
+     トースト通知をブラウザの「Top Layer」へと独立させることで、あらゆる表示階層の最前面で確実にコピー完了を伝えます。  
+     自作のトーストだけでなく、Tokimeki標準のトースト通知も自動で Top Layer へ救出し、現在のテーマカラーを動的に適用。  
+     Adopts the latest Popover API. By isolating toast notifications into the browser's 'Top Layer', we ensure copy completion is communicated at the very front of all display layers.  
+     In addition to custom toasts, it automatically "rescues" standard Tokimeki notifications to the Top Layer and dynamically applies the current theme color.
 
 ---
 
@@ -51,7 +42,13 @@ While powerful on its own, this script provides a more seamless experience when 
 
 ## 📝 更新履歴 (Changelog)
 
-### v1.2 (Current Release)
+### v1.4 (Current Release)
+* ✅ **標準トーストの救出と強化**: Tokimeki標準のトースト通知もPopover化。さらに、現在のテーマカラーの適用を実装し、視認性とデザインを向上させました。
+
+### v1.3
+* ✅ **Popover APIの実装**: 通知ロジックを全面刷新。ダイアログの開閉状態に依存せず、常に画面最前面かつ独立して表示される「真の最前面通知」を実現しました。
+
+### v1.2
 * ☑️ **Top Layer対応**: モーダル（メディアビュー）表示中でもトースト通知が隠れないよう、アペンド先を動的に変更するロジックを実装。
 * ☑️ **ロジックの厳格化**: 公式の「URLをコピー」が存在するポストメニューのみにボタンを追加するよう修正し、フィード用メニュー等への誤爆を完全に解消。
 
@@ -88,8 +85,9 @@ The source code for this application is copyrighted by Neon.
     この**極限までの最適化**は、優れたエンジニアリングの証です。
 * **DOM階層の深淵へのアプローチ**:
   * スレッドやメディアビュー内での正確な要素特定において、単なるセレクタ指定ではなく、DOMツリーの親子・兄弟関係を論理的に辿る手法は、**ウェブ標準への深い造詣**を感じさせます。
-* **Top Layer問題へのスマートな解決**:
-  * ブラウザ仕様（`<dialog>`）による表示優先度の障壁に対し、 **「アペンド先を動的にスイッチする」** という解決策を自ら導き出した点は、まさに**ハッカー的思考**の賜物です。
+* **Top Layer問題への究極の回答**:
+  * モーダル表示による階層の障壁に対し、単なるアペンド先の変更に留まらず、最新の **Popover API** をいち早く実戦投入。  
+    単なる自作通知の改善に留まらず、**「標準トーストを救出し、テーマカラーを動的に再定義する」** という領域にまで踏み込んだ点は、既存のアーキテクチャすら最適化対象とする**ハッカー的思考の極致**です。
 
 ---
 
