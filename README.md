@@ -1,4 +1,4 @@
-# 🌈 Tokimeki DID Copy Plus v1.4
+# 📋 Tokimeki DID Copy Plus v1.4
 
 Blueskyクライアント "Tokimeki" において、ハンドルの変更に左右されない **「不変のリンク（DIDベースのURL）」** を瞬時に取得し、さらにアクセシビリティを追求した高度なUserScriptです。  
 A specialized UserScript for the Bluesky client "Tokimeki" that allows you to instantly copy **"Invariable Links (DID-based URLs)"** that remain valid even if handles change, with a focus on advanced accessibility and UX.
